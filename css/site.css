@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serifv;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -29,23 +29,24 @@ header {
 
 #content {
   flex: 1 0 auto;
-  background-image: url(../img/IMG_4134.JPG);
+  background-image: url(../img/resized-background.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center 
 }
 
 #intro {
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
-  flex: 1 1 0;
+  flex: 1 1 auto;
   text-align: center;
-  margin: 2%;
-  padding: 2%;
-  /* border: 5px solid red; */
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 footer {
@@ -56,39 +57,11 @@ footer {
 footer > ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; 
+  justify-content: center; 
 }
 
-li {
+footer > ul > li {
   list-style: none;
-}
-
-#facebook > a {
-  /*
-  background: url('../img/social_icons.svg') no-repeat;  
-  width: 4em;
-  height: 4em;
-  display: block;
-  */
-}
-
-#facebook-logo {
-  background: url('../img/social_icons.svg') no-repeat;  
-  background-size: 4em 16em;
-}
-
-#instagram > a {
-    background: url('../img/social_icons.svg') -129px 0 no-repeat;
-    width: 4em;
-    height: 4em;
-    display: block;
-}
-
-#twitter > a {
-    background: url('../img/social_icons.svg') -66px 0 no-repeat;
-    width: 4em;
-    height: 4em;
-    display: block;
 }
 
 #logo {
@@ -99,14 +72,19 @@ h1 {
   font-size: 1.5em;
 }
 
+.social {
+  display: flex;
+  margin: 0.7em;
+}
+
+.mask {
+  background: rgba(0,0,0,0.6); 
+}
+
 @media all and (min-width: 40.5em) {
-/*
-  #content {
-    background-position: 0 0;
-  }
-*/
+  
   #logo {
-    width: 13%;
+    width: 11%;
   }
 
   #intro {
