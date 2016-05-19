@@ -47,6 +47,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -81,6 +82,10 @@ h1 {
   background: rgba(0,0,0,0.6); 
 }
 
+#intro > p {
+  padding: 0.5em;
+}
+
 @media all and (min-width: 40.5em) {
   
   #logo {
@@ -91,4 +96,8 @@ h1 {
     padding: 1%;
   }
 
+  #notice {
+    width: 50%;
+  }
+    
 }
